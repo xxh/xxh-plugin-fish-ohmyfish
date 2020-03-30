@@ -14,7 +14,21 @@ done
 rm -rf $build_dir
 mkdir -p $build_dir
 
-for f in pluginrc.fish
+for f in pluginrc.fish omf-conf
 do
-    cp $CDIR/$f $build_dir/
+    cp -r $CDIR/$f $build_dir/
 done
+
+cd $build_dir
+
+[ $QUIET ] && arg_q='-q' || arg_q=''
+
+if [ -x "$(command -v git)" ]; then
+  git clone $arg_q https://github.com/oh-my-fish/oh-my-fish oh-my-fish
+  cd oh-my-fish && git checkout v6
+else
+  echo You should install git to build: https://duckduckgo.com/?q=install+git+on+linux
+  exit 1
+fi
+
+rm -rf .git

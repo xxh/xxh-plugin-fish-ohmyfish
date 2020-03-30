@@ -1,3 +1,4 @@
-set_color yellow; echo -n ">>> "
-set_color red; echo "Here will be Oh My Fish!"
-set_color normal
+set CURRENT_DIR (dirname (realpath (status current-filename)))
+set -gx OMF_PATH "$CURRENT_DIR/oh-my-fish"
+set -gx OMF_CONFIG "$CURRENT_DIR/omf-conf"
+source $OMF_PATH/init.fish
