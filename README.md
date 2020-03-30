@@ -1,3 +1,5 @@
+Current plugin stage is prototype. Known issue: https://github.com/oh-my-fish/oh-my-fish/issues/748 
+
 [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish) plugin for [xxh-shell-fish](github.com/xxh/xxh-shell-fish).
 
 ## Install
