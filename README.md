@@ -1,4 +1,10 @@
-[Oh My Fish](https://github.com/oh-my-fish/oh-my-fish) plugin for [xxh-shell-fish](github.com/xxh/xxh-shell-fish).
+<p align="center">
+<a href="https://github.com/oh-my-fish/oh-my-fish">Oh My Fish</a> plugin for <a href="https://github.com/xxh/xxh-shell-fish">xxh-shell-fish</a>.
+</p>
+
+<p align="center">  
+If you like the idea click ⭐ on the repo and stay tuned.
+</p>
 
 ## Install
 Install from xxh repo:
